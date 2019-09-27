@@ -1,4 +1,5 @@
-# firstproject
+# VuejsExperimentation
+Learning Vue.js by creating a simple login app
 
 ## Project setup
 ```
@@ -33,5 +34,4 @@ npm run test:e2e
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 =======
-# VuejsExperimentation
-Learning Vue.js by creating a simple login app
+
