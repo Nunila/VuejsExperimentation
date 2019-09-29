@@ -1,11 +1,9 @@
 <template>
   <v-container class="container-fluid">
 
-
          <v-card class="mx-auto middle-of-screen" raised>
-             <v-card-title >I'm a title</v-card-title>
-
-              <v-card-text>I'm card text</v-card-text>
+         <v-img  src="../assets/LogosRumboEx/MyStudyCoach.png"></v-img>
+              <v-card-text>Please login with your credentials.</v-card-text>
                 <v-layout text-center wrap>
                 <v-col>
 
@@ -24,7 +22,7 @@
                 </v-col>
                 </v-layout>
 
-              <v-card-actions>
+              <v-card-actions class="justify-center">
                   <v-btn class="ma-2" tile color="indigo" dark>Login</v-btn>
               </v-card-actions>
         </v-card>
