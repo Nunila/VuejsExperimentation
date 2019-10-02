@@ -55,7 +55,7 @@
                 authService(this.user, url).
                     then(result => {
                         console.log("RESULT: " + JSON.stringify(result));
-                        this.$store.commit('setProfile', result);
+                        this.$store.commit('setProfile', result.result);
                         //this.$store.commit('setLogin');
                         this.$router.push('/logged')
                         console.log("this is: " + this.$store.getters.userProfile);

@@ -26,6 +26,8 @@
       },
     mounted() {
       var profile = this.$store.getters.userProfile;
+      console.log(profile);
+      console.log(JSON.stringify(profile))
       this.employeeName = profile.username
     }
   };
