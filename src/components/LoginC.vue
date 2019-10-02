@@ -51,12 +51,14 @@
 
             login: function() {
                 const url = flask.FLASK_URL + '/studentlogin'
-                console.log(url)
 
                 authService(this.user, url).
                     then(result => {
-                         console.log("RESULT: " + JSON.stringify(result));
-
+                        console.log("RESULT: " + JSON.stringify(result));
+                        this.$store.commit('setProfile', result);
+                        //this.$store.commit('setLogin');
+                        this.$router.push('/logged')
+                        console.log("this is: " + this.$store.getters.userProfile);
                 }).catch(er => {
                     console.log("login error: ", er)
                 });
